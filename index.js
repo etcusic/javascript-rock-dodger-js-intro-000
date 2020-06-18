@@ -88,13 +88,16 @@ function moveDodgerLeft() {
    var leftNumbers = DODGER.style.left.replace('px', '')
    var left = parseInt(leftNumbers, 10)
 
-   DODGER.style.left = `${left - 4}px`   
+   DODGER.style.left = `${left - 4}px`
 }
 
 function moveDodgerRight() {
    var leftNumbers = DODGER.style.left.replace('px', '')
    var left = parseInt(leftNumbers, 10)
 
+   if(left === 0){
+     left = left
+   }
    DODGER.style.left = `${left + 4}px`
 }
 
