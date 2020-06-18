@@ -90,8 +90,9 @@ function moveDodgerLeft() {
 
    if(left === 0){
      DODGER.style.left = '0px'
+   } else {
+     DODGER.style.left = `${left - 4}px`
    }
-   DODGER.style.left = `${left - 4}px`
 }
 
 function moveDodgerRight() {
