@@ -89,7 +89,7 @@ function moveDodgerLeft() {
    var left = parseInt(leftNumbers, 10)
 
    if(left === 0){
-     left = left
+     DODGER.style.left = 0
    }
    DODGER.style.left = `${left - 4}px`
 }
